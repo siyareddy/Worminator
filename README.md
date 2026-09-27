@@ -1,6 +1,6 @@
-# Worminator 🪱
+# Worminator
 
-A tool that watches a video of a *C. elegans* worm and automatically counts how many times it bends per minute — instead of a person counting by eye.
+A tool that watches a video of a *C. elegan* and automatically counts how many times it bends per minute — instead of a person counting by eye.
 
 ## Why
 
