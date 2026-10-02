@@ -25,10 +25,10 @@ pip install opencv-python scipy
 ## Usage
 
 1. Place your worm video in this folder.
-2. Update the filename in `worminator.py` to match your video.
+2. Update the filename in `automated-body-bends-assay.py` to match your video.
 3. Run:
    ```bash
-   python worminator.py
+   python automated-body-bends-assay.py
    ```
 4. Output:
    ```
@@ -37,8 +37,8 @@ pip install opencv-python scipy
 
 ## Status
 
-In progress. Core tracking and bend-counting work. Next: testing across multiple videos and comparing bend rate across genotypes.
+Core pipeline works: detects the worm, tracks its head through reversals, and extracts a bend-rate signal. Tested on one video — automated count (24.5 bends) is close to, but not identical to, a manual by-eye count (~20 bends) over the same clip. Possible sources of the gap: subtle bends that are hard to catch by eye but visible in the extracted signal, or oversensitivity to small wiggles. Next: validate against more videos and more genotypes.
 
 ## Background
 
-Built from undergraduate research in the Ailion Lab on *C. elegans* genotypes affecting dense-core vesicle biogenesis (*rab-2*, *rund-1*, *cccp-1*) and neuropeptide processing (*egl-3*, *egl-21*) — genes that affect neuron signaling and may alter movement.
+Built from undergraduate research in the Ailion Lab on *C. elegans* genotypes affecting dense-core vesicle biogenesis (*rab-2*) and neuropeptide processing (*egl-3*, *egl-21*) — genes that affect neuron signaling and may alter movement.
